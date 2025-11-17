@@ -74,7 +74,7 @@ static int	read_to_node(t_list *lst, int fd)
 		return (1);
 	buf[size] = '\0';
 	tmp[0] = buf;
-	tmp[1] = ft_strchr(tmp[0] + 1, '\n');
+	tmp[1] = ft_strchr(tmp[0], '\n');
 	while (tmp[1])
 	{
 		if (store_str(lst, tmp[1] - tmp[0] + 1, tmp[0]))
