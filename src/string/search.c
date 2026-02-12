@@ -65,8 +65,6 @@ char	*ft_strchrnul(const char *s, int c)
 			return ((char *)s);
 		++s;
 	}
-	if (*s == c)
-		return ((char *)s);
 	return ((char *)s);
 }
 
@@ -80,7 +78,7 @@ char	*ft_strrchrnul(const char *s, int c)
 	char	*ret;
 
 	c = c & 0xFF;
-	ret = NULL;
+	ret = (char *)s;
 	while (*s)
 	{
 		if (*s == c)
