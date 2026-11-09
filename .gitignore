@@ -1,7 +1,8 @@
 libftTester
 gnlTester
 libft.a
-objs/
+*.d
+*.o
 
 # cmake
 CMakeLists.txt
