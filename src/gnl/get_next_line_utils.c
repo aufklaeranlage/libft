@@ -45,6 +45,19 @@ char	*create_line(t_list *lst)
 	return (line);
 }
 
+/*! @brief Returns the length of the line stored in `lst`.
+ *  @param `lst` The list containing the line which's size will be returned.
+ *
+ *  Iterates over the nodes in the list `lst` until a node with a `\n` character
+ *  as it's last character is found, summing up the length of all nodes
+ *  encountered.
+ *
+ *  @return returns the length on success; 0 if the list is unpopulated.
+ *
+ *  We expect the list to be properly populated and don't perform safety checks
+ *  on the node's payload.
+ */
+
 static size_t	get_line_size(t_list *lst)
 {
 	size_t	total;
@@ -66,6 +79,15 @@ static size_t	get_line_size(t_list *lst)
 	}
 	return (total);
 }
+
+/*! @brief Creates a string from the nodes in `lst` until a `\n` character is
+ *  @brief found as the last character of a node.
+ *  @param `lst` The list from which the string should be built.
+ *  @param `line` The preallocated buffer of an appropriate size.
+ *
+ *  Iterates over the list of nodes in `lst` copying their contents into
+ *  `line` until a `\n` character is found or the last node was copied.
+ */
 
 static void	cpy_substrings(t_list *lst, char *line)
 {

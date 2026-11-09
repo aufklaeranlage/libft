@@ -13,6 +13,10 @@ The library is used throughout most of 42's core curriculum and got a couple of 
 
 The main takeaway from the project for me was the introduction to proper documentation of functions, interation with arrays (strings), usage of pointers for data or functions (striteri, strmapi), first interactions with dynamic memory allocation (calloc, realloc), and linked lists as a way to create dynamically growing data structures.
 
+Over time and progression in the Core curriculum the library was modified since the original (restircted) requirements of the library weren't necessary to uphold and the functions were adjusted to my needs, resulting in a wider set of `ctype` functions, modifications to the list structure, etc.
+
+With a growing set of functions beign added to the library the code was split into differnet sets that could individually be compiled and added into the library if needed to avoid the need to compile the whole library with unecessary functions.
+
 ## Instructions
 
 To build this library we were instructed to read the Man pages for a given set of functions and implement the functions as they were described in the Man pages. The set of was to be compiled into a static library that could be linked with other programs.
