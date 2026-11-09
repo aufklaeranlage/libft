@@ -19,7 +19,7 @@ NAME		:= libft.a
 SRC_DIR		:= src
 SUB_DIR		:= ctype std string split put list gnl
 OBJ_DIR		:= obj
-INC_DIR		:= inc
+INC_DIR		:= include
 
 # * SOURCES & OBJECTS ******************************************************** #
 

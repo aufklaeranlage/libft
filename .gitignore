@@ -4,10 +4,7 @@ libft.a
 *.d
 *.o
 
-# cmake
-CMakeLists.txt
-cmake/
-compile_commands.json
+compile_flags.txt
 
 # dotfiles
 .*
